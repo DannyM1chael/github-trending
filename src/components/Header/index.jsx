@@ -4,7 +4,7 @@ import { Navbar, NavbarBrand } from 'react-bootstrap';
 export default function Header() {
   return (
     <Navbar className="navbar-dark bg-dark">
-      <NavbarBrand>GitHub Trending</NavbarBrand>
+      <NavbarBrand href="/">GitHub Trending</NavbarBrand>
     </Navbar>
   );
 }

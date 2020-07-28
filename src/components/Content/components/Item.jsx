@@ -5,7 +5,7 @@ import { Card, Button, Collapse } from 'react-bootstrap';
 export default function Item({ full_name, stargazers_count, html_url, owner, description }) {
   const [open, setOpen] = useState(false);
   return (
-    <Card className="mb-3">
+    <Card className="mb-3 ml-5">
       <Card.Body>
         <div className="d-flex justify-content-between">
           <div>
@@ -14,7 +14,9 @@ export default function Item({ full_name, stargazers_count, html_url, owner, des
             </Card.Title>
             <Star stars={stargazers_count} />
             <div className="mb-3">
-              <a href={html_url}>{html_url}</a>
+              <a href={html_url} target="_blank" rel="noopener noreferrer">
+                {html_url}
+              </a>
             </div>
           </div>
           <img
